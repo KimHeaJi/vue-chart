@@ -1,11 +1,12 @@
 <template>
   <div>
-    hidd
+    <vue-extend-layout />
   </div>
 </template>
 
 <script>
+import VueExtendLayout from 'vue-extend-layout'
 export default {
-  name: "indexPage"
+  components: { VueExtendLayout }
 }
 </script>

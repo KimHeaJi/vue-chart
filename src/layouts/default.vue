@@ -1,11 +1,11 @@
 <template>
   <div>
-    regist
+    default...
   </div>
 </template>
 
 <script>
 export default {
-  name: 'RegistPage'
+
 }
 </script>

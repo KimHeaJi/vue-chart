@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import IndexPage from '@/pages/Index'
-import RegistPage from '@/pages/Regist'
-import NotFoundPage from '@/components/NotFound'
 
 Vue.use(Router)
 
@@ -12,22 +9,24 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: IndexPage
+      component: () => import('@/pages/Index'),
+      meta: {
+        layout: 'default'
+      }
     },
     {
-      path: '/write',
-      name: 'write',
-      components: RegistPage
+      path: '/login',
+      name: 'login',
+      meta: {
+        layout: 'login'
+      }
     },
-    // {
-    //   path: '/:id',
-    //   name: 'view',
-    //   components: RegistPage
-    // },
     {
       path: '*',
       name: 'notFound',
-      component: NotFoundPage
+      meta: {
+        layout: 'error'
+      }
     }
   ]
 })
