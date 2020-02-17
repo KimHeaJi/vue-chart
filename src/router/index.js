@@ -8,22 +8,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'index',
-      component: () => import('@/pages/Index'),
+      name: 'Index',
+      component: () => import('@/pages/index'),
       meta: {
         layout: 'default'
       }
     },
     {
       path: '/login',
-      name: 'login',
+      name: 'Login',
+      component: () => import('@/pages/Login'),
       meta: {
         layout: 'login'
       }
     },
     {
       path: '*',
-      name: 'notFound',
+      name: 'NotFound',
       meta: {
         layout: 'error'
       }

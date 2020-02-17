@@ -1,0 +1,9 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:none}
+body{-webkit-overflow-scrolling:touch;line-height:1.4;background:rgb(225, 235, 252);}
+.login{width:100vw;height:100vh;padding:0 13px;background-position:0 0;overflow:hidden}
+.login_content {border-radius:7px;position:relative;top:50%;transform:translateY(-50%);}
+.login_content .top {height:100%;padding:0;text-align:center;}
+.login_content .top span {display:block;font-weight:bold;font-size:40px;}
+.login_content .contain {height:100%;overflow:hidden;}
+	

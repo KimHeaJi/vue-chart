@@ -1,11 +1,11 @@
 <template>
   <div>
-    loading...
+    login..
   </div>
 </template>
 
 <script>
 export default {
-
+  name: 'loginLayout'
 }
 </script>
